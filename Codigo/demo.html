@@ -58,36 +58,60 @@
 
 				<section>
 				<h2></h2>				
-				<img style = "width:900px; height:550px;" src="https://www.researchgate.net/profile/Roberto_Jacome/publication/301301481/figure/fig6/AS:351193072193539@1460742361802/Figura-36-Consumo-de-Servicios-Web-formularios-3135-Web-Services-con-JAVA-JAX-WS-es.png"></a>
+				<img style = "width:900px; height:550px;" src="https://testingbaires.com/wp-content/uploads/2017/09/A.jpg"></a>
 				</section>
 
-				<section>
-					<h2>Comienzos de HTML</h2>
-					<p>También se le conocía como HTTP/0.9. Una petición se hacía en una sóla línea, que comenzaba con un get, seguido del recurso a pedir.</p>
-				</section>
-				<section>
-					<h2>Comienzos de HTML</h2>
-					<p>No usaba cabeceras HTTP, es decir, sólo se podían transmitir archivos HTML y no de ningún otro tipo. También había información del estado ni códigos de error; si había un problema, el archivo HTML era devuelto con una descripción del problema.</p>					
-				</section>
+				
 				</section>
 
 				<section>
 				<section>
 					<h2>¿Qué es REST?</h2>
-					<p>Define un conjunto de principios arquitectónicos por los que se pueden diseñar servicios Web que se centran en los recursos de un sistema, lo que incluye la forma en que los estados de los recursos se dirigen y transfieren a través de HTTP por un amplio rango de clientes que están escritos en diferentes lenguajes.</p>
+					<p>	REST define un conjunto de principios arquitectónicos por los que se pueden diseñar servicios Web que se centran en los recursos de un sistema, lo que incluye la forma en que los estados de los recursos se dirigen y transfieren a través de HTTP por un amplio rango de clientes que están escritos en diferentes lenguajes.
+					</p>
+					<p>Fue diseñado por Roy Fielding en el 2000 y no obtuvo mucho atención en su momento.</p>
 				</section>
 
 					<section>
-					<h2>HTTP 1.0</h2>
-					<p>Esto se llevó a cabo 1991 y 1995: un servidor y un navegador, añadían una nueva funcionalidad y se evaluaba su aceptación. Por esto, eran comunes los problemas de interoperatividad. En 1996, se publicó el RFC 1945, para acabar con los problemas, siendo este, la definición del protocolo HTTP/1.0.</p>
+					<h3>Caracteristicas principales</h3>
+					<ul>
+						<li>Esta asociados a información</li>
+						<li>Permiten listar, crear, leer, actualizar y borrar información</li>
+						<li>Para las operaciones anteriores necesitan una URL y un método HTTP para accederlas</li>
+					</ul>	
+				</section>
+				<section>
+					<ul>
+						
+						<li>Usualmente regresan la información en formato JSON.</li>
+						<li>Retornan códigos de respuesta HTML, por ejemplo 200, 201, 404, etc</li>
+						<li>Protocolo cliente/servidor sin estado: cada petición HTTP contiene toda la información necesaria para ejecutarla, lo que permite que ni cliente ni servidor necesiten recordar ningún estado previo para satisfacerla</li>
+					</ul>	
+				
 				
 				</section>
 				</section>
 			
-			
-			
-			
-	
+				<section>
+					<section>
+						<h2>Métodos que utiliza</h2>
+						<p>Una de las características por la que destaca REST es por su sencillez a la hora de utilizar metodos. Los que utiliza principalmente son los  siguientes:</p>
+						
+							<ul>
+								<li>Listar y leer: Usan el método <b>GET</b></li>
+								<li>Crear: Usan el método <b>POST</b> </li>
+								<li>Actualizar: Usan el método <b>PATCH</b> para actualizar y <b>PUT</b> para reemplazar.</li>
+								<li>Borrar: Usan el método <b>DELETE</b></li>
+							</ul>
+
+					
+					</section>
+					
+					
+					
+					
+				</section>
+
 				<section>
 					<section>
 						<h2>Ejemplos de API's REST</h2>
@@ -107,85 +131,9 @@
 						cambio en el código de la aplicación.</p>
 						<br>
 					</section>
-					
-					<section>
-						<h2>MULTIPLEXADO</h2>
-						<p>HTTP / 2 es un protocolo multiplexado que permite que múltiples flujos de solicitud compartan 
-						la misma conexión TCP / IP.</br>
-						Mejoras del Multiplexado:</br>
-							-Intercalar múltiples solicitudes en paralelo sin bloquear ninguna.</br>
-
-							-Intercalar múltiples respuestas en paralelo sin bloquear a nadie.</br>
-
-							-Use una sola conexión para entregar múltiples solicitudes y respuestas en paralelo.</br></p>
-						<br>
-					</section>
-					
-					
-					<section>
-						<p>-Ofrece tiempos de carga de página más bajos al eliminar la latencia innecesaria y mejorar la utilización de la capacidad de red disponible.</p>
-						<br>
-					</section>
-					
-					<section>
-						<h2>COMPRESION</h2>
-						<p>Los encabezados HTTP son muy detallados y altamente redundantes. HTTP / 2 proporciona un algoritmo de compresión 
-						efectivo (HPACK) que se adapta a HTTP y evita muchos de los problemas de seguridad sobre conexiones TLS(Cliente servidor/Servidor-Servidor). El tamaño reducido del encabezado permite que se envíen muchas solicitudes a través de una conexión TCP / IP recién abierta sin la necesidad de esperar a que su ventana de control de congestión aumente a la capacidad del enlace. Esto reduce significativamente la cantidad de viajes de ida</p>
-						<br>
-					</section>
-					
-					<section>
-						<p> y vuelta a la red necesarios para representar una página.</p>
-					</section>
-					
-					
-					<section>
-						<h2>SERVER PUSH</h2>
-						<p>Consiste en que el servidor será capaz de enviar información al cliente antes de que éste la solicite, es decir, el servidor intentará prever los recursos que el cliente va a necesitar y enviárselos antes a una caché especial para este propósito.El propósito de esto es mejorar las latencias y la cantidad de solucitudes que se envian.</p>
-						<br>
-					</section>
+	
 				</section>
-				<section>
-					<section>
-						<h2>HTTP 3 QUIC</h2>
-						<p>¿Qué es HTTP 3 QUIC?</p>
-						<p>Es un protocolo de red experimental sobre la capa de transporte diseñado por Jim Roskind en Google, inicialmente implantado en 2012. 
-							Este protocolo proporciona un entorno para la iteración rápida de algoritmos de prevención de congestión, estableciendo control en 
-							el espacio de aplicación en ambos extremos, en lugar de hacerlo en el espacio kernel. </p>
-						<br>
-						
-					</section>
-					<section>
-						
-						<h3>¿Cual es su objetivo?</h3>
-						<p>Su objetivo es desarrollar un protocolo que cumpla:</p> 
-						<ul>
-							<li>Un uso extendido del mismo en todo el mundo. </li>
-							<li>Reducir la pérdida de paquetes por bloqueo head-of-line. </li>
-							<li>Baja latencia.</li>
-							<li>Mejorar el soporte para móviles, en términos de latencia y eficiencia.</li>
-						</ul>
-						
-					</section>
-					<section>
-						
-						<h3>Ventajas</h3>
-						<p>QUIC resuelve el problema que tiene TCP utilizando un identificador único e independiente para cada 
-						extremo de la conexión. Este ID de conexión tiene un tamaño de entre cuatro y dieciocho bytes, que es creado 
-						de manera específica para la implementación de cada endpoint, lo que asegura que el endpoint pueda identificar 
-						su propio ID en un paquete QUIC, ya que el ID de conexión de destino está presente en cada paquete.</p>
-						
-					</section>
-					<section>
-						<h3>Ventajas</h3>
-						<p>Multiplexado: Permite enviar y recibir varios archivos al mismo tiempo, en este caso de manera más 
-						eficiente que HTTP/2 al no tener el problema de bloqueo de la cabecera de la línea.</p>
-						
-						<p>Mejor control de la saturación: QUIC consiste en un control de saturación conectable y una señalización más 
-						rica que TCP, lo que permite a QUIC proporcionar información más rica que TCP a los algoritmos de control de saturación. </p>
-					</section>	
-					
-				</section>
+				
 
 			</div>
 
